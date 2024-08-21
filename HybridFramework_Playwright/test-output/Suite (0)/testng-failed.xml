@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite (0)]">
+  <test name="Login2">
+    <classes>
+      <class name="com.tests.CopyOfAccenLoginTest"/>
+      <class name="com.tests.Abc"/>
+    </classes>
+  </test> <!-- Login2 -->
+</suite> <!-- Failed suite [Suite (0)] -->

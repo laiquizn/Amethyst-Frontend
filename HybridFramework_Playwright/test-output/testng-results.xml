@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-08T12:38:48 CST" name="Default suite" finished-at="2024-08-08T12:43:33 CST" duration-ms="285408">
+    <groups>
+    </groups>
+    <test started-at="2024-08-08T12:38:48 CST" name="Default test" finished-at="2024-08-08T12:43:33 CST" duration-ms="285408">
+      <class name="com.tests.LandingPage">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.tests.LandingPage@4b013c76]" started-at="2024-08-08T12:38:47 CST" name="startTest" finished-at="2024-08-08T12:38:48 CST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.tests.LandingPage@4b013c76]" started-at="2024-08-08T12:38:48 CST" name="beforeMethod" finished-at="2024-08-08T12:38:48 CST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.tests.LandingPage.GetURLContent()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="GetURLContent()[pri:4, instance:com.tests.LandingPage@4b013c76]" started-at="2024-08-08T12:38:48 CST" name="GetURLContent" finished-at="2024-08-08T12:43:33 CST" duration-ms="285339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetURLContent -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.tests.LandingPage@4b013c76]" started-at="2024-08-08T12:43:33 CST" name="getResult" finished-at="2024-08-08T12:43:33 CST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GetURLContent status=SUCCESS method=LandingPage.GetURLContent()[pri:4, instance:com.tests.LandingPage@4b013c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="close()[pri:0, instance:com.tests.LandingPage@4b013c76]" started-at="2024-08-08T12:43:33 CST" name="close" finished-at="2024-08-08T12:43:33 CST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.tests.LandingPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

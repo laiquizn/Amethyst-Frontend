@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 52.185 s <<< FAILURE! - in TestSuite
+register(com.tests.browser)  Time elapsed: 16.005 s  <<< FAILURE!
+com.microsoft.playwright.PlaywrightException: 
+Error {
+  message='Navigation failed because page was closed!
+=========================== logs ===========================
+navigating to "http://playwright.dev/", waiting until "load"
+============================================================
+  name='Error
+  stack='Error: Navigation failed because page was closed!
+=========================== logs ===========================
+navigating to "http://playwright.dev/", waiting until "load"
+============================================================
+    at C:\Users\DIVYAB~1.SEL\AppData\Local\Temp\playwright-java-5118228124204534098\package\lib\server\frames.js:673:13
+    at async ProgressController.run (C:\Users\DIVYAB~1.SEL\AppData\Local\Temp\playwright-java-5118228124204534098\package\lib\server\progress.js:101:22)
+    at async FrameDispatcher.goto (C:\Users\DIVYAB~1.SEL\AppData\Local\Temp\playwright-java-5118228124204534098\package\lib\server\dispatchers\frameDispatcher.js:87:59)
+    at async DispatcherConnection.dispatch (C:\Users\DIVYAB~1.SEL\AppData\Local\Temp\playwright-java-5118228124204534098\package\lib\server\dispatchers\dispatcher.js:397:22)
+}
+	at com.tests.browser.register(browser.java:23)
+Caused by: com.microsoft.playwright.impl.DriverException: 
+Error {
+  message='Navigation failed because page was closed!
+=========================== logs ===========================
+navigating to "http://playwright.dev/", waiting until "load"
+============================================================
+  name='Error
+  stack='Error: Navigation failed because page was closed!
+=========================== logs ===========================
+navigating to "http://playwright.dev/", waiting until "load"
+============================================================
+    at C:\Users\DIVYAB~1.SEL\AppData\Local\Temp\playwright-java-5118228124204534098\package\lib\server\frames.js:673:13
+    at async ProgressController.run (C:\Users\DIVYAB~1.SEL\AppData\Local\Temp\playwright-java-5118228124204534098\package\lib\server\progress.js:101:22)
+    at async FrameDispatcher.goto (C:\Users\DIVYAB~1.SEL\AppData\Local\Temp\playwright-java-5118228124204534098\package\lib\server\dispatchers\frameDispatcher.js:87:59)
+    at async DispatcherConnection.dispatch (C:\Users\DIVYAB~1.SEL\AppData\Local\Temp\playwright-java-5118228124204534098\package\lib\server\dispatchers\dispatcher.js:397:22)
+}
+	at com.tests.browser.register(browser.java:23)
+

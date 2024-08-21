@@ -1,0 +1,204 @@
+# Created at 2023-02-08T13:31:25.995
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+
+
+# Created at 2023-02-08T13:31:28.824
+Unexpected IOException with stream: com.microsoft.playwright.PlaywrightException: Error {
+  message='write EPROTO 24628:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ POST https://reqres.in/api/users?page=2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+  content-type: application/json
+  content-length: 25
+============================================================
+  name='Error
+  stack='Error: write EPROTO 24628:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ POST https://reqres.in/api/users?page=2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+  content-type: application/json
+  content-length: 25
+============================================================
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+}
+
+# Created at 2023-02-08T13:31:31.472
+Unexpected IOException with stream: com.microsoft.playwright.PlaywrightException: Error {
+  message='write EPROTO 12116:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ DELETE https://reqres.in/api/users?page=2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+  content-type: application/json
+  content-length: 25
+============================================================
+  name='Error
+  stack='Error: write EPROTO 12116:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ DELETE https://reqres.in/api/users?page=2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+  content-type: application/json
+  content-length: 25
+============================================================
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+}
+
+# Created at 2023-02-08T13:31:31.473
+Unexpected IOException: 6,1,com.tests.Demo,login1(com.tests.Demo),null,null,null
+
+
+# Created at 2023-02-08T13:31:31.475
+Unexpected IOException: 5,1,testNgRunner.TestNgCodeRunner,testNgXMLSuite(testNgRunner.TestNgCodeRunner),testNgRunner.TestNgCodeRunner,null,null
+
+
+# Created at 2023-02-08T13:31:31.501
+Unexpected IOException with stream: Test Not marked as Yes
+
+
+# Created at 2023-02-08T13:31:31.599
+Unexpected IOException with stream: 4
+
+# Created at 2023-02-08T13:31:31.600
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-08T13:31:34.221
+Unexpected IOException with stream: com.microsoft.playwright.PlaywrightException: Error {
+  message='write EPROTO 13864:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ GET https://reqres.in/api/users/2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+============================================================
+  name='Error
+  stack='Error: write EPROTO 13864:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ GET https://reqres.in/api/users/2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+============================================================
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+}
+
+# Created at 2023-02-08T13:31:36.780
+Unexpected IOException with stream: com.microsoft.playwright.PlaywrightException: Error {
+  message='write EPROTO 22744:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ PUT https://reqres.in/api/users/2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+  content-type: application/json
+  content-length: 25
+============================================================
+  name='Error
+  stack='Error: write EPROTO 22744:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ PUT https://reqres.in/api/users/2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+  content-type: application/json
+  content-length: 25
+============================================================
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+}
+
+# Created at 2023-02-08T13:31:39.794
+Unexpected IOException with stream: com.microsoft.playwright.PlaywrightException: Error {
+  message='write EPROTO 18964:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ POST https://reqres.in/api/users?page=2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+  content-type: application/json
+  content-length: 25
+============================================================
+  name='Error
+  stack='Error: write EPROTO 18964:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ POST https://reqres.in/api/users?page=2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+  content-type: application/json
+  content-length: 25
+============================================================
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+}
+
+# Created at 2023-02-08T13:31:42.379
+Unexpected IOException with stream: com.microsoft.playwright.PlaywrightException: Error {
+  message='write EPROTO 10688:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ DELETE https://reqres.in/api/users?page=2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+  content-type: application/json
+  content-length: 25
+============================================================
+  name='Error
+  stack='Error: write EPROTO 10688:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+
+=========================== logs ===========================
+→ DELETE https://reqres.in/api/users?page=2
+  user-agent: Playwright/1.25.0 (x64; windows 10.0) java/19
+  accept: */*
+  accept-encoding: gzip,deflate,br
+  content-type: application/json
+  content-length: 25
+============================================================
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+}
+
+# Created at 2023-02-08T13:31:42.680
+Unexpected IOException with stream: 
+===============================================
+suite
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+
+
+
+# Created at 2023-02-08T13:31:44.536
+Unexpected IOException with stream: microsoft.exchange.webservices.data.core.exception.service.remote.ServiceRequestException: The request failed. The request failed. Unexpected content: 0
+
+# Created at 2023-02-08T13:31:44.537
+Unexpected IOException with stream: 
+
+
+# Created at 2023-02-08T13:31:44.538
+Unexpected IOException: 6,1,testNgRunner.TestNgCodeRunner,testNgXMLSuite(testNgRunner.TestNgCodeRunner),null,null,null
+
+
+# Created at 2023-02-08T13:31:44.690
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

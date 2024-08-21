@@ -1,0 +1,12 @@
+#--For EDGE --!
+browser = EDGE
+url = http://demo.guru99.com/test/newtours/register.php
+browser_name_EDGE=EDGE
+
+#--For firefox --!
+browser = Firefox
+url = http://demo.guru99.com/test/newtours/register.php
+
+#--For Chrome --!
+browser = Chrome
+url = http://demo.guru99.com/test/newtours/register.php
