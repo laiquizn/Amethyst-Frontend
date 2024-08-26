@@ -3,21 +3,60 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
+# azure-pipelines.yml
 trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
+
+variables:
+  JAVA_VERSION: '11'
+  MAVEN_VERSION: '3.8.5'
 
 steps:
 
+- task: JavaToolInstaller@0
+  inputs:
+    versionSpec: '11'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'PreInstalled'
+
 - task: Maven@4
   inputs:
-    mavenPomFile: '**/HybridFramework_Playwright/pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+    mavenPomFile: '**/Amethyst-Frontend/HybridFramework_Playwright/pom.xml'
+    jdkVersionOption: 1.8
+  displayName: 'Install Maven'
+  
+- checkout: self
+  displayName: 'Checkout Code'
+
+- script: |
+    mvn clean install
+  displayName: 'Build Project'
+
+- script: |
+    mvn test
+  displayName: 'Run Tests'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: '**/TEST-*.xml'
+    testRunTitle: 'Playwright Test Results'
+  condition: succeededOrFailed()
+  displayName: 'Publish Test Results'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/target'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/test-results.zip'
+    replaceExistingArchive: true
+  displayName: 'Archive Test Results'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    artifactName: 'test-results'
+    targetPath: '$(Build.ArtifactStagingDirectory)/test-results.zip'
+  displayName: 'Publish Test Results Artifact'
