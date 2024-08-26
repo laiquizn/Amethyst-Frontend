@@ -12,7 +12,7 @@ pool:
 steps:
 - task: JavaToolInstaller@0
   inputs:
-    versionSpec: '17'
+    versionSpec: '11'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: AzureStorage
 - script: mvn -B install -D skipTests --no-transfer-progress
