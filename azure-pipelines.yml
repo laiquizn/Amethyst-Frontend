@@ -22,7 +22,7 @@ steps:
 - script: mvn test
   displayName: 'Run tests'
   
-- task: Maven@3
+- task: Maven@4
   inputs:
     mavenPomFile: '**/HybridFramework_Playwright/pom.xml'
     mavenOptions: '-Xmx3072m'
